@@ -1,0 +1,24 @@
+var pic
+
+function preload(){
+  pic = loadImage("data/record_half.png");
+}
+
+function setup() {
+createCanvas (windowWidth, windowHeight);
+background ('rgba(0, 255, 0, 0.25)');
+imageMode (CENTER, CENTER);
+let div = createDiv ('<h3>SKO WIP</h3>');
+div.position(width/2, height/2);
+ // Use CORNERS mode.
+  imageMode(CORNERS);
+
+  // Display the image.
+  image(pic, 10, 10, 90, 40);
+}
+
+
+function draw() {
+  image (pic, 100, 100);
+
+}
